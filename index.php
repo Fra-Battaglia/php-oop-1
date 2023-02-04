@@ -29,6 +29,41 @@
 		<link href="css//style.css" rel="stylesheet" >
 	</head>
 	<body>
-		
+		<div class="container">
+			<div class="row my-5">
+				<div class="col-3">
+					<div class="card rounded-0 border-0">
+					<img src="<?php echo $home_alone->cover ?>" alt="<?php echo $home_alone->title ?>" >
+						<div class="card-body">
+							<h3 class="card-title"><?php echo $home_alone->title ?></h3>
+
+							<div class="info text-secondary">
+								<h5 class="m-0">Genres</h5>
+								<ul class="list-unstyled">
+									<li><?php echo $home_alone->genre[0] ?></li>
+									<li><?php echo $home_alone->genre[1] ?></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card rounded-0 border-0">
+					<img src="<?php echo $kung_fu_panda->cover ?>" alt="<?php echo $kung_fu_panda->title ?>" >
+						<div class="card-body">
+							<h3 class="card-title"><?php echo $kung_fu_panda->title ?></h3>
+
+							<div class="info text-secondary">
+								<h5 class="m-0">Genres</h5>
+								<ul class="list-unstyled">
+									<li><?php echo $kung_fu_panda->genre[0] ?></li>
+									<li><?php echo $kung_fu_panda->genre[1] ?></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
